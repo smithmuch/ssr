@@ -1,3 +1,12 @@
 yum -y install wget
 
+
+第一个：
 wget -N --no-check-certificate https://raw.githubusercontent.com/smithmuch/ssr/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
+
+
+
+第二个：
+wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/smithmuch/ssr/master/shadowsocks-all.sh
+chmod +x shadowsocks-all.sh
+./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
